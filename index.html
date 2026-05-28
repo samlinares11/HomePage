@@ -28,9 +28,11 @@
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#barberos">Barberos</a></li>
           <li class="nav-item"><a class="nav-link" href="#marca">Marca</a></li>
           <li class="nav-item"><a class="nav-link btn-agenda" href="/secciones/agenda.html">Agendar</a></li>
+          <li class="nav-item"><a class="nav-link btn-agenda" href="/secciones/iniciarsesion.html">Iniciar sesión</a></li>
+          <li class="nav-item"><a class="nav-link btn-agenda" href="/secciones/registrarse.html">Registrarse</a></li>
         </ul>
       </div>
     </div>
@@ -71,55 +73,121 @@
     </div>
   </section>
 
-  <!-- SERVICIOS -->
-  <section id="servicios" class="servicios py-5">
-    <div class="container">
-      <div class="text-center mb-5">
-        <p class="etiqueta">Nuestros servicios</p>
-        <h2>Diseñamos tu mejor versión</h2>
-      </div>
+  <!-- BARBEROS -->
+  <section id="barberos" class="section-padding">
+    <div class="container-fluid px-0">
 
-      <div class="row g-4">
-
-        <div class="col-md-6 col-lg-3">
-          <div class="servicio">
-            <span>01</span>
-            <i class="bi bi-person"></i>
-            <h4>Corte clásico</h4>
-            <p>Un estilo limpio, elegante y profesional.</p>
-          </div>
+        <div class="text-center mb-5 px-3">
+            <p class="section-eyebrow">Conoce a nuestro equipo</p>
+            <h2 class="text-uppercase fw-bold text-white title-options">
+                Nuestros Barberos
+            </h2>
+            <div class="sub-bar"></div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
-          <div class="servicio">
-            <span>02</span>
-            <i class="bi bi-brush"></i>
-            <h4>Barba</h4>
-            <p>Perfilado y diseño con precisión.</p>
-          </div>
+        <div class="barbers-carousel-wrapper">
+
+            <button class="carousel-arrow carousel-arrow-prev" id="prevBtn">
+                &#8592;
+            </button>
+
+            <div class="barbers-track-container">
+
+                <div class="barbers-track">
+
+                    <!-- CARD 1 -->
+                    <div class="barber-card">
+                        <div class="barber-img-wrap">
+                            <img src="/img/barbero1.jpg">
+                            <div class="barber-overlay"></div>
+                        </div>
+
+                        <div class="barber-info">
+                            <h4 class="barber-name">Mateo Ríos</h4>
+
+                            <span class="barber-specialty">
+                                Cortes Clásicos · Afeitado con Navaja
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="barber-card">
+                        <div class="barber-img-wrap">
+                            <img src="/img/barbero2.jpg">
+                            <div class="barber-overlay"></div>
+                        </div>
+
+                        <div class="barber-info">
+                            <h4 class="barber-name">Andrés Vega</h4>
+
+                            <span class="barber-specialty">
+                                Diseño de Barba · Degradados
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="barber-card">
+                        <div class="barber-img-wrap">
+                            <img src="/img/barbero3.jpg">
+                            <div class="barber-overlay"></div>
+                        </div>
+
+                        <div class="barber-info">
+                            <h4 class="barber-name">Santiago Mora</h4>
+
+                            <span class="barber-specialty">
+                                Estilos Modernos · Fade
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="barber-card">
+                        <div class="barber-img-wrap">
+                            <img src="/img/barbero4.jpg">
+                            <div class="barber-overlay"></div>
+                        </div>
+
+                        <div class="barber-info">
+                            <h4 class="barber-name">Camilo Torres </h4>
+
+                            <span class="barber-specialty">
+                                Tratamientos Capilares  · Color
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- CARD 5 -->
+                    <div class="barber-card">
+                        <div class="barber-img-wrap">
+                            <img src="/img/barbero5.jpg">
+                            <div class="barber-overlay"></div>
+                        </div>
+                        <div class="barber-info">
+                            <h4 class="barber-name">Felipe Guzmán</h4>
+
+                            <span class="barber-specialty">
+                                Cortes Urbanos  ·  Diseños
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="carousel-arrow carousel-arrow-next" id="nextBtn">
+                &#8594;
+            </button>
+
         </div>
 
-        <div class="col-md-6 col-lg-3">
-          <div class="servicio">
-            <span>03</span>
-            <i class="bi bi-stars"></i>
-            <h4>Estilo moderno</h4>
-            <p>Cortes actuales según tu identidad.</p>
-          </div>
-        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
 
-        <div class="col-md-6 col-lg-3">
-          <div class="servicio">
-            <span>04</span>
-            <i class="bi bi-gem"></i>
-            <h4>Premium</h4>
-            <p>Experiencia completa y personalizada.</p>
-          </div>
-        </div>
-
-      </div>
     </div>
-  </section>
+</section>
 
   <!-- MARCA -->
   <section id="marca" class="marca py-5">
@@ -297,5 +365,92 @@
             });
         });
     </script>
+    <script>
+
+const track = document.querySelector('.barbers-track');
+const cards = document.querySelectorAll('.barber-card');
+
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+const dotsWrap = document.getElementById('carouselDots');
+
+let currentIndex = 0;
+
+function getVisible() {
+    if (window.innerWidth >= 1200) return 3;
+    if (window.innerWidth >= 768) return 2;
+    return 1;
+}
+
+let visibleCount = getVisible();
+
+const totalSlides = cards.length;
+
+function buildDots() {
+
+    dotsWrap.innerHTML = '';
+
+    for (let i = 0; i <= totalSlides - visibleCount; i++) {
+
+        const dot = document.createElement('button');
+
+        dot.classList.add('carousel-dot');
+
+        if (i === currentIndex) {
+            dot.classList.add('active');
+        }
+
+        dot.addEventListener('click', () => goTo(i));
+
+        dotsWrap.appendChild(dot);
+    }
+}
+
+function goTo(index) {
+
+    visibleCount = getVisible();
+
+    const maxIndex = totalSlides - visibleCount;
+
+    currentIndex = Math.max(0, Math.min(index, maxIndex));
+
+    const cardWidth = cards[0].offsetWidth + 24;
+
+    track.style.transform =
+        `translateX(-${currentIndex * cardWidth}px)`;
+
+    document.querySelectorAll('.carousel-dot')
+        .forEach((dot, i) => {
+
+            dot.classList.toggle(
+                'active',
+                i === currentIndex
+            );
+        });
+}
+
+prevBtn.addEventListener('click', () => {
+    goTo(currentIndex - 1);
+});
+
+nextBtn.addEventListener('click', () => {
+    goTo(currentIndex + 1);
+});
+
+window.addEventListener('resize', () => {
+
+    visibleCount = getVisible();
+
+    buildDots();
+
+    goTo(currentIndex);
+});
+
+buildDots();
+
+goTo(0);
+
+</script>
 </body>
 </html>
